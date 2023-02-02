@@ -1,0 +1,58 @@
+:root {
+  --black: #212529;
+  --black-gray: #343a40;
+  --gray: #495057;
+  --gray-white: #6c757d;
+  --white: #adb5bd;
+  --green: #52b788;
+  --red: #e5383b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Kanit", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+main{
+  background-color: var(--black-gray);
+  width: 48rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  text-transform: capitalize;
+  margin: 8rem auto 0;
+}
+
+h1{
+
+}
+
+form{
+
+}
+
+main > div{
+
+}
+
+main > div p{
+
+}
+
+main > div > div{
+  
+}
+
+main > div > div svg{
+
+}
