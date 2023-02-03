@@ -3,7 +3,8 @@
   --black-gray: #343a40;
   --gray: #495057;
   --gray-white: #6c757d;
-  --white: #adb5bd;
+  --white-gray: #adb5bd;
+  --white: #ffffff;
   --green: #52b788;
   --red: #e5383b;
 }
@@ -21,7 +22,7 @@ html {
   color: var(--white);
 }
 
-main{
+main {
   background-color: var(--black-gray);
   width: 48rem;
   display: flex;
@@ -31,28 +32,107 @@ main{
   padding: 20px;
   text-transform: capitalize;
   margin: 8rem auto 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px 1px var(--gray-white);
 }
 
-h1{
-
+h1 {
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
-form{
-
+form {
+  width: 80%;
+  display: flex;
 }
 
-main > div{
-
+form input {
+  height: 36px;
+  padding: 2px 12px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  width: 100%;
+  background-color: var(--black);
+  color: var(--white);
 }
 
-main > div p{
-
+form input:focus {
+  outline: 1px solid var(--gray-white);
 }
 
-main > div > div{
-  
+form button {
+  padding: 4px 8px;
+  height: 36px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: var(--gray-white);
+  color: var(--white);
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s linear;
 }
 
-main > div > div svg{
+form button:hover {
+  color: var(--gray-white);
+  background-color: var(--white);
+}
 
+main > div {
+  width: 76%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main > div p {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+main > div > div {
+  display: flex;
+  gap: 12px;
+}
+
+main > div > div svg {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+main > div > div svg:first-of-type {
+  color: var(--green);
+}
+main > div > div svg:last-of-type {
+  color: var(--red);
+}
+
+/* clear button */
+.clean {
+  border: none;
+  background-color: transparent;
+  color: var(--red);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* modal */
+
+.modal {
+  background-color: var(--green);
+  padding: 4px 8px;
+  width: 60%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  border-radius: 4px;
+  margin-bottom: -12px;
+}
+
+.green {
+  background-color: var(--green);
+}
+.red {
+  background-color: var(--red);
 }
